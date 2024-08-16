@@ -6,10 +6,10 @@ public class RefuelingStationV2 implements Refueling {
     public void fuel(FuelType fuelType) {
 
         switch (fuelType) {
-            case Diesel -> System.out.println("Запрвка дизельным топливом.\n");
+            case Diesel -> System.out.println("Заправка дизельным топливом.\n");
             case GaseLine -> System.out.println("Заправка бензином.\n");
         }
 
     }
-    
+
 }

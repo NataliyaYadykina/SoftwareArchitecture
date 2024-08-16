@@ -6,6 +6,8 @@ public class Harvester extends Car implements Fueling, Wiping {
 
     private Refueling refueling;
 
+    private IWiping iWiping;
+
     public Harvester(String make, String model, Color color) {
         super(make, model, color);
         setWheelsCount(6);
@@ -13,6 +15,10 @@ public class Harvester extends Car implements Fueling, Wiping {
 
     public void setRefueling(Refueling refueling) {
         this.refueling = refueling;
+    }
+
+    public void setIWiping(IWiping iWiping) {
+        this.iWiping = iWiping;
     }
 
     @Override
@@ -58,17 +64,23 @@ public class Harvester extends Car implements Fueling, Wiping {
 
     @Override
     public void wipMirrors() {
-
+        if (iWiping != null) {
+            iWiping.wipMirrors();
+        }
     }
 
     @Override
     public void wipWindshield() {
-
+        if (iWiping != null) {
+            iWiping.wipWindshield();
+        }
     }
 
     @Override
     public void wipHeadLights() {
-
+        if (iWiping != null) {
+            iWiping.wipHeadlights();
+        }
     }
 
 }

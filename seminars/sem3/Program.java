@@ -56,6 +56,14 @@ public class Program {
         harvester.setRefueling(refuelingStation);
 
         harvester.fuel(FuelType.Diesel);
+
+        IWiping wipingStation = new WipingStation();
+
+        harvester.setIWiping(wipingStation);
+
+        harvester.wipMirrors();
+        harvester.wipWindshield();
+        harvester.wipHeadLights();
     }
 
     public static double calculateMaintenance(Car car) {
