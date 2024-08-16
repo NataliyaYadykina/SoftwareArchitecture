@@ -57,7 +57,7 @@ public class Program {
 
         harvester.fuel(FuelType.Diesel);
 
-        IWiping wipingStation = new WipingStation();
+        WipingStation wipingStation = new WipingStation();
 
         harvester.setIWiping(wipingStation);
 
