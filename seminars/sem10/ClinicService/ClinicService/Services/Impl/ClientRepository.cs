@@ -110,7 +110,7 @@ namespace ClinicService.Services.Impl
                 connection.Open();
                 // Прописываем в команду SQL-запрос на обновление данных
                 SqliteCommand command = connection.CreateCommand();
-                command.CommandText = "UPDATE clients Document = @Document, SurName = @SurName, FirstName = @FirstName, Patronymic = @Patronymic, Birthday = @Birthday WHERE ClientId = @ClientId";
+                command.CommandText = "UPDATE clients SET Document = @Document, SurName = @SurName, FirstName = @FirstName, Patronymic = @Patronymic, Birthday = @Birthday WHERE ClientId = @ClientId";
                 command.Parameters.AddWithValue("@ClientId", item.ClientId);
                 command.Parameters.AddWithValue("@Document", item.Document);
                 command.Parameters.AddWithValue("@SurName", item.SurName);
