@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicDesktop", "ClinicDesk
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicDesktop.Data", "ClinicDesktop.Data\ClinicDesktop.Data.csproj", "{857EE2C1-F858-4C88-A647-7A761BA767BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicServiceTests", "ClinicServiceTests\ClinicServiceTests.csproj", "{8370F07F-56BD-4226-91FB-DAD654E600C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{857EE2C1-F858-4C88-A647-7A761BA767BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{857EE2C1-F858-4C88-A647-7A761BA767BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{857EE2C1-F858-4C88-A647-7A761BA767BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8370F07F-56BD-4226-91FB-DAD654E600C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8370F07F-56BD-4226-91FB-DAD654E600C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8370F07F-56BD-4226-91FB-DAD654E600C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8370F07F-56BD-4226-91FB-DAD654E600C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
